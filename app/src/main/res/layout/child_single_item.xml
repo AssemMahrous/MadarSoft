@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="#f7f7f7">
+
+    <TextView
+        android:id="@+id/day_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="@string/day"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/day_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@id/day_title"
+        app:layout_constraintTop_toTopOf="@id/day_title"
+        tools:text="20" />
+
+    <TextView
+        android:id="@+id/night_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="20dp"
+        android:text="@string/night"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/day_value"
+        app:layout_constraintTop_toTopOf="@id/day_title" />
+
+
+    <TextView
+        android:id="@+id/night_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@id/night_title"
+        app:layout_constraintTop_toTopOf="@id/day_title"
+        tools:text="20" />
+
+
+    <TextView
+        android:id="@+id/pressure_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/pressure"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/day_title"
+        app:layout_constraintTop_toBottomOf="@id/day_title" />
+
+    <TextView
+        android:id="@+id/pressure_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@id/pressure_title"
+        app:layout_constraintTop_toTopOf="@id/pressure_title"
+        tools:text="20" />
+
+    <TextView
+        android:id="@+id/humidity_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="20dp"
+        android:text="@string/humidity"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/pressure_value"
+        app:layout_constraintTop_toTopOf="@id/pressure_title" />
+
+
+    <TextView
+        android:id="@+id/humidity_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@id/humidity_title"
+        app:layout_constraintTop_toTopOf="@id/humidity_title"
+        tools:text="20" />
+
+    <TextView
+        android:id="@+id/description_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/description"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/day_title"
+        app:layout_constraintTop_toBottomOf="@id/pressure_title" />
+
+    <TextView
+        android:id="@+id/description_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toEndOf="@id/description_title"
+        app:layout_constraintTop_toTopOf="@id/description_title"
+        tools:text="text text" />
+
+
+    <TextView
+        android:id="@+id/speed_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/speed"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/day_title"
+        app:layout_constraintTop_toBottomOf="@id/description_title" />
+
+    <TextView
+        android:id="@+id/speed_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toEndOf="@id/speed_title"
+        app:layout_constraintTop_toTopOf="@id/speed_title"
+        tools:text="text text" />
+
+
+    <TextView
+        android:id="@+id/deg_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/deg"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/day_title"
+        app:layout_constraintTop_toBottomOf="@id/speed_title" />
+
+    <TextView
+        android:id="@+id/deg_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toEndOf="@id/deg_title"
+        app:layout_constraintTop_toTopOf="@id/deg_title"
+        tools:text="text text" />
+
+
+    <TextView
+        android:id="@+id/cloud_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/cloud"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/day_title"
+        app:layout_constraintTop_toBottomOf="@id/deg_title" />
+
+    <TextView
+        android:id="@+id/cloud_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toEndOf="@id/cloud_title"
+        app:layout_constraintTop_toTopOf="@id/cloud_title"
+        tools:text="text text" />
+
+
+    <TextView
+        android:id="@+id/rain_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/rain"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@id/day_title"
+        app:layout_constraintTop_toBottomOf="@id/cloud_title" />
+
+    <TextView
+        android:id="@+id/rain_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@id/rain_title"
+        app:layout_constraintTop_toTopOf="@id/rain_title"
+        tools:text="text text" />
+
+    <TextView
+        android:id="@+id/snow_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/snow"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@id/day_title"
+        app:layout_constraintTop_toBottomOf="@id/rain_title" />
+
+    <TextView
+        android:id="@+id/snow_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@id/snow_title"
+        app:layout_constraintTop_toTopOf="@id/snow_title"
+        tools:text="text text" />
+</android.support.constraint.ConstraintLayout>
